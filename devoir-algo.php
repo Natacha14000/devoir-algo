@@ -33,7 +33,7 @@ o Ajoutez une étape finale à la recette (par exemple, "Servir chaud et dégust
 o Faites en sorte d’afficher la recette générée*/
 
 /*Demander à l'utilisateur*/
-$IngredientSup = readline("Ajouter un ingrédient\n");
+$IngredientSup = (string)readline("Ajouter un ingrédient\n");
 
 /*Préparation des données*/
 $tabIngredient = ["2 oeuf", "500 grm de farine", "2 cs de sucre", "un saucisson", "une salade", "oignons"];
@@ -50,16 +50,20 @@ $longueurTab = count($tabIngredient);
 // Utilisation d'une boucle for pour parcourir le tableau
 for ($i = 0; $i < $longueurTab; $i++) {
     $Ingredient = $tabIngredient[$i];
+    if ($Ingredient == "oignons") {
+        echo "Attention aux yeux !\n"; }
+
 }
 
 $longueurTabAction = count($tabAction);
 
-for ($a = 0; $a < $longueurTabAction; rand(0,5)) {
+for ($a = 0; $a < $longueurTabAction; $a++) {
     $Action = $tabAction[$a];
+    echo $Action . "\n" . $Ingredient . "\n";
 }
 
-echo $Action . $Ingredient . "\n";
 echo "Servir chaud et deguster !";
+
 ?> 
     
 </body>
