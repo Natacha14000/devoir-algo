@@ -37,6 +37,8 @@ o Faites en sorte d’afficher la recette générée*/
 $tabIngredient = ["oeuf", "farine", "sucre", "saucisson", "salade", "cereale"];
 $tabAction = ["Coupez", "Mélanger", "Faites revenir", "Blanchir", "Cuire", "Enfourner"];
 
+/*Demander à l'utilisateur*/
+$ingredientSup = readline("Ajouter un ingrédient\n");
 
 ?> 
     
