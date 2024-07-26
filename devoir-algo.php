@@ -32,19 +32,34 @@ o Pour chaque ingrédient :
 o Ajoutez une étape finale à la recette (par exemple, "Servir chaud et déguster !").
 o Faites en sorte d’afficher la recette générée*/
 
+/*Demander à l'utilisateur*/
+$IngredientSup = readline("Ajouter un ingrédient\n");
 
 /*Préparation des données*/
-$tabIngredient = ["oeuf", "farine", "sucre", "saucisson", "salade", "cereale"];
+$tabIngredient = ["2 oeuf", "500 grm de farine", "2 cs de sucre", "un saucisson", "une salade", "oignons"];
 $tabAction = ["Coupez", "Mélanger", "Faites revenir", "Blanchir", "Cuire", "Enfourner"];
 
-/*Demander à l'utilisateur*/
-$ingredientSup = readline("Ajouter un ingrédient\n");
-
 /*Génération de la recette*/
-$TexteRecette = "";
-echo "Délicieuse recette personnalisée"
+$TexteRecette = array ("");
+echo "Délicieuse recette personnalisée\n";
 
+/*Traitement des ingrédients*/
 
+$longueurTab = count($tabIngredient);
+
+// Utilisation d'une boucle for pour parcourir le tableau
+for ($i = 0; $i < $longueurTab; $i++) {
+    $Ingredient = $tabIngredient[$i];
+}
+
+$longueurTabAction = count($tabAction);
+
+for ($a = 0; $a < $longueurTabAction; rand(0,5)) {
+    $Action = $tabAction[$a];
+}
+
+echo $Action . $Ingredient . "\n";
+echo "Servir chaud et deguster !";
 ?> 
     
 </body>
