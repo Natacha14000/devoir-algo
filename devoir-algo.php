@@ -34,7 +34,8 @@ o Faites en sorte d’afficher la recette générée*/
 
 
 /*Préparation des données*/
-$tabValeurs = ["oeuf", "farine", "sucre", "saucisson", "salade", "cereale"];
+$tabIngredient = ["oeuf", "farine", "sucre", "saucisson", "salade", "cereale"];
+$tabAction = ["Coupez", "Mélanger", "Faites revenir", "Blanchir", "Cuire", "Enfourner"];
 
 
 ?> 
