@@ -40,6 +40,11 @@ $tabAction = ["Coupez", "Mélanger", "Faites revenir", "Blanchir", "Cuire", "Enf
 /*Demander à l'utilisateur*/
 $ingredientSup = readline("Ajouter un ingrédient\n");
 
+/*Génération de la recette*/
+$TexteRecette = "";
+echo "Délicieuse recette personnalisée"
+
+
 ?> 
     
 </body>
